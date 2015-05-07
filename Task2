@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Task2 {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+
+        int x = 1;
+        int y = 0;
+
+        while (x !=0) {
+            System.out.print("Enter Numbers:");
+            x = scanner.nextInt();
+            y = y + x;
+        }
+        System.out.println(y);
+
+        scanner.close();
+
+    }
+}
