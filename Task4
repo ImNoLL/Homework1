@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class Task4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter n:");
+        int n = scanner.nextInt();
+        int x = 0;
+        int y = 0;
+
+        while(++x != (n + 1)){
+            while(++y != (n + 1)){
+             System.out.print((x * y) + "\t");
+            }
+            System.out.println();
+            y = 0;
+        }
+        scanner.close();
+
+    }
+
+}
