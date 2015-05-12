@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class Task5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter n: ");
+        int n = scanner.nextInt();
+        String z;
+
+        // 1)
+        System.out.print("1.");
+        for (int x = 1; x <= n; ++x){
+            for (int y = 1; y <= x; ++y){
+                if (x ==1) z = "  ";
+                else {
+                    z = "    ";
+                }
+                System.out.print(z + x);
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // 2)
+        System.out.print("2.");
+        for (int x = 1; x <= n; ++x){
+            for (int y = 1; y <= x; ++y){
+                if (x ==1) z = "  ";
+                else {
+                    z = "    ";
+                }
+                System.out.print(z + y);
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // 3)
+        System.out.print("3.");
+        for (int x = 1; x <= n; ++x){
+            for (int y = 1; y <=n - (x-1); ++y){
+                if (x == 1 && y== 1 ) z = "  ";
+                else {
+                    z = "    ";
+                }
+                System.out.print(z + x);
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // 4)
+        System.out.print("4.");
+        for (int x = 1; x <= n; ++x){
+            for (int y = 1; y <=n - (x-1); ++y){
+                if (x == 1 && y== 1 ) z = "  ";
+                else {
+                    z = "    ";
+                }
+                System.out.print(z + y);
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        scanner.close();
+    }
+}
