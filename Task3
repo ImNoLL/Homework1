@@ -7,9 +7,8 @@ public class Task3 {
         System.out.print("Enter n:");
         int n = scanner.nextInt();
 
-        while (n-- !=0){
+        do {
             if ((n/2.0)==n/2) System.out.print(n+" ");
-        }
+        }while (n-- !=0);
         scanner.close();
     }
-}
